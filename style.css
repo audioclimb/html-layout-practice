@@ -11,6 +11,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 10px;
 }
 
 #head-text {
@@ -21,12 +22,31 @@ header {
 
 }
 
-img {
+
+
+.big-picture {
+    height: 80vh;
+    width: 100%;
+    background-image: url('https://www.spacex.com/sites/spacex/files/jcsat18_pad39a_streak.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+}
+
+#image-bar {
+    position: absolute;
+    bottom: 0;
+    height: 15vh;
     width: 100%;
 }
 
 .under-picture {
-    
+   
+    opacity: .8;
     background-color: black;
     display: flex;
     align-items: center;
@@ -37,16 +57,19 @@ img {
     color: white;
 }
 
-.three-choices {
-    color: white;
-}
-
 .watch-replay {
     background-color: white;
 }
 
+.three-choices {
+    opacity: .8;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
 .text {
-    height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
