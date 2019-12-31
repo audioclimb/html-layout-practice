@@ -1,5 +1,7 @@
 body {
-    height: 200vh;
+    /* height: 150vh; */
+
+
 }
 
 header {
@@ -10,29 +12,40 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0px 10px;
+    z-index: 5;
+}
+
+.white {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #head-text {
     color: white;
 }
-#head-text-2 {
-    color: grey;
 
+.grey {
+    display: flex;
+    justify-content: flex-end;
 }
 
+#head-text-2 {
+    color: grey;
+    padding: 25px;
+}
 
 
 .big-picture {
     height: 80vh;
     width: 100%;
     background-image: url('https://www.spacex.com/sites/spacex/files/jcsat18_pad39a_streak.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     display: flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    justify-content: center;
     position: relative;
 
 }
@@ -42,15 +55,11 @@ header {
     bottom: 0;
     height: 15vh;
     width: 100%;
-}
-
-.under-picture {
-   
     opacity: .8;
     background-color: black;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
 }
 
 .info {
@@ -58,18 +67,27 @@ header {
 }
 
 .watch-replay {
+    padding: 5px;
     background-color: white;
 }
 
+.stuff {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
 .three-choices {
-    opacity: .8;
-    background-color: black;
+    height: 30px;
     color: white;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .text {
+    height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -88,6 +106,31 @@ header {
     width: 75px;
     border: 1px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.first {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 400px;
+    padding-left: 10px;
+}
+
+.copy {
+    color: grey;
 }
